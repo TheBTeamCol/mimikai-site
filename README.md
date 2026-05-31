@@ -8,6 +8,7 @@ Sitio estático de Mimikai: landing, política de privacidad y soporte. Pensado 
 |---------|-------------|
 | `index.html` | Landing del juego (hero, features, modos de juego). |
 | `privacy.html` | Política de privacidad (la página que pide App Store / Play Store). |
+| `terms.html` | Términos y condiciones / EULA. |
 | `support.html` | Página de soporte con preguntas frecuentes y contacto. |
 
 Sin build ni dependencias: HTML + CSS inline. Se sirve tal cual.
@@ -36,6 +37,7 @@ Sin build ni dependencias: HTML + CSS inline. Se sirve tal cual.
 3. El sitio queda disponible en:
    - `https://thebteamcol.github.io/mimikai-site/`
    - Privacidad: `https://thebteamcol.github.io/mimikai-site/privacy.html`
+   - Términos: `https://thebteamcol.github.io/mimikai-site/terms.html`
    - Soporte: `https://thebteamcol.github.io/mimikai-site/support.html`
 
 ## Pendientes
