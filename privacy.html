@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — Mimikai</title>
+    <title>Privacy Policy — MIMIK-AI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -73,13 +73,6 @@
             margin-bottom: 32px;
             font-size: 0.875rem;
         }
-        .note {
-            background: var(--card);
-            border-left: 4px solid var(--pink);
-            border-radius: 8px;
-            padding: 16px 20px;
-            font-size: 0.95rem;
-        }
     </style>
 </head>
 <body>
@@ -90,62 +83,48 @@
         <p class="updated">Last updated: May 31, 2026</p>
 
         <h2>Overview</h2>
-        <p>Mimikai is a team charades game. To work, the app connects to our server, which sets up and runs your game and generates the clues. We collect only the minimum needed for the game to function: <strong>you don't need to create an account or give us your name, email, or phone number</strong>.</p>
+        <p>MIMIK-AI is designed with privacy at its core. Your privacy is our highest priority, and this policy outlines our strict commitment to transparency under standard mobile industry frameworks—including Google Firebase guidelines, the Apple App Store Review Guidelines, and the Google Play Developer Program Policies. Your data stays on your devices — we do not collect, store, or transmit any personal information to external servers.</p>
 
-        <h2>Information we process</h2>
-        <p>When you create and play a game, the app sends the game configuration to our server:</p>
+        <h2>Data We Do Not Collect</h2>
+        <p>MIMIK-AI explicitly does not harvest, request, or collect the following information:</p>
         <ul>
-            <li><strong>Team names</strong> — the labels you choose (for example, "Team 1")</li>
-            <li><strong>Color and number of players</strong> for each team</li>
-            <li><strong>Age range</strong> for each team</li>
-            <li><strong>Country and language</strong> you selected</li>
-            <li><strong>Categories</strong> you chose (movies, jobs, etc.)</li>
-            <li><strong>Game progress and scores</strong></li>
-        </ul>
-        <p>This data is used solely to build your game, show the right clues, keep score, and let you resume a game in progress.</p>
-
-        <div class="note">
-            <p style="margin-bottom:0;">Team names are free text that you type. We recommend <strong>not using full real names or personal data</strong> as a team name, since they are stored together with the game.</p>
-        </div>
-
-        <h2>Data we do NOT collect</h2>
-        <ul>
-            <li>Personal information (name, email, phone number)</li>
-            <li>Accounts or logins (the current version does not require them)</li>
-            <li>Location data</li>
-            <li>Contacts, photos, or other device data</li>
-            <li>Advertising identifiers</li>
+            <li>Personal information (such as your legal name, email address, physical address, or phone number)</li>
+            <li>Real-time or historical geolocation data</li>
+            <li>Health, medical, or biometric identifiers</li>
+            <li>Advertising identifiers (such as IDFA or AAID) for profiling or tracking purposes</li>
         </ul>
 
-        <h2>Clue generation (AI)</h2>
-        <p>When our database doesn't have enough clues for your configuration, we generate them using a large language model provider (<strong>OpenAI</strong> or <strong>Google Gemini</strong>). Those requests contain only game parameters — category, age range, country, and language — and <strong>never personal data or your team names</strong>.</p>
-        <p>Generated clues are stored in our database and reused in future games to improve the catalog. These clues contain no personal information. See the privacy policies of <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a> for more details on how they handle data.</p>
-
-        <h2>Storage and retention</h2>
-        <p>Game data is stored in our database to run and restore the game. Generated clues are retained as part of the game's catalog. Information is transmitted encrypted over HTTPS.</p>
-
-        <h2>Third-party services</h2>
-        <p>Mimikai relies on the following external services:</p>
+        <h2>Data Stored on Your Device</h2>
+        <p>The following categories of data are processed and stored locally on your smartphone or compatible wearable devices, remaining strictly within your application's sandboxed environment:</p>
         <ul>
-            <li><strong>AI providers</strong> — OpenAI and/or Google Gemini, solely to generate clues.</li>
-            <li><strong>Server infrastructure</strong> — where the backend that runs the games is hosted.</li>
+            <li><strong>Schedules</strong> — your specific custom intervals, notifications, and interaction routines configured within the App.</li>
+            <li><strong>Preferences</strong> — user interface configurations, notification rules, sound cues, and local visual arrangements.</li>
+            <li><strong>Activity Counters</strong> — local tracking metrics, completed games, and performance summaries computed directly on your device.</li>
         </ul>
-        <p>Mimikai does not integrate third-party advertising or tracking SDKs.</p>
-        <!--
-          TO CONFIRM: does the mobile app include analytics or crash reporting
-          (Firebase Analytics, Crashlytics, etc.)? If so, declare it here as a third party,
-          stating what data it collects and linking to its policy. If it uses none,
-          this block can be removed. — conservative wording for now.
-        -->
+        <p>Any synchronization between paired systems (such as a smartphone and a companion smartwatch) utilizes native, encrypted, device-to-device wireless protocols (such as Apple's WatchConnectivity framework or Android's Wearable Data Layer API). This data is never sent to an external server.</p>
 
-        <h2>Children's privacy</h2>
-        <p>Mimikai is meant to be played in groups, including with children, and filters clue content by each team's age range. We do not knowingly request or collect personal information from minors. Because the game requires no accounts or personal data, no information that identifies a child is collected.</p>
+        <h2>Subscriptions and Billing</h2>
+        <p>MIMIK-AI offers a subscription model priced at <strong>$4.99 USD per month</strong>. All financial transactions, billing cycles, renewals, and cancellations are processed entirely and exclusively through Apple's App Store (using StoreKit) or Google's Play Store billing platform.</p>
+        <ul>
+            <li>We do not have access to, nor do we collect, process, or store your credit card data, bank details, or payment configurations.</li>
+            <li>Subscription management is handled directly by the operating system account settings of your device.</li>
+        </ul>
 
-        <h2>Changes to this policy</h2>
-        <p>If we make changes to this privacy policy, we will update the date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+        <h2>Third-Party Services and Infrastructure</h2>
+        <p>To optimize application stability, track technical health, and guarantee a seamless user experience, MIMIK-AI integrates select components of the Google Firebase suite. These integrations strictly adhere to data-minimization practices:</p>
+        <ul>
+            <li><strong>Firebase Crashlytics &amp; Performance Monitoring:</strong> We use these tools to receive anonymized, aggregated system crash logs and bug data. These reports only capture stack traces, device hardware models, and operating system variations. No personally identifiable information (PII) is attached to these logs.</li>
+            <li><strong>StoreKit / Google Play Billing:</strong> The only external platform services involved in the app architecture are the native app store APIs used strictly for secure subscription authentication.</li>
+        </ul>
 
-        <h2>Contact</h2>
-        <p>If you have questions about this privacy policy, please contact us at <a href="mailto:jssilva93@gmail.com">jssilva93@gmail.com</a>.</p>
+        <h2>Children's Privacy</h2>
+        <p>MIMIK-AI is not directed at children under the age of 13. We do not knowingly collect, store, or process personal data from children under 13. In compliance with the Children's Online Privacy Protection Act (COPPA) and General Data Protection Regulation (GDPR) youth provisions, if a parent or guardian becomes aware that a minor has bypassed verification or generated local diagnostic records, please contact us immediately so we can facilitate clearing any localized configurations or cached profiles.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We reserve the right to modify this Privacy Policy at any time. If we make changes to this documentation, we will update the "Last updated" date at the top of this page. Continued deployment and interaction with MIMIK-AI after such modifications constitutes your acknowledgement and formal acceptance of the updated Privacy Policy.</p>
+
+        <h2>Contact and Support</h2>
+        <p>If you have any questions, compliance requests, technical bug reports, or feedback regarding this Privacy Policy, please reach out to our legal and support desk at: <a href="mailto:correo@gmail.com">correo@gmail.com</a>.</p>
     </div>
 </body>
 </html>
