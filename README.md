@@ -40,5 +40,5 @@ Sin build ni dependencias: HTML + CSS inline. Se sirve tal cual.
 
 ## Pendientes
 
-- Confirmar si la app móvil usa analítica / reporte de crashes (Firebase Analytics, Crashlytics, etc.) y declararlo en `privacy.html` (hay un comentario `PENDIENTE DE CONFIRMAR` en el archivo).
 - Reemplazar los enlaces `#` de los badges de tiendas en `index.html` cuando la app esté publicada.
+- Si la app móvil añade analítica, crash reporting (p. ej. Firebase Crashlytics) o suscripciones, actualizar `privacy.html` y `support.html`.
