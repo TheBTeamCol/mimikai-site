@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte — Mimikai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --purple: #7c5cff;
+            --pink: #ff5fa2;
+            --bg: #f8f6ff;
+            --card: #ffffff;
+            --text: #241a3a;
+            --text-secondary: #6b6285;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #130f1f;
+                --card: #1f1830;
+                --text: #efeafc;
+                --text-secondary: #a89fc0;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 8px;
+        }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        a {
+            color: var(--purple);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        .back {
+            display: inline-block;
+            margin-bottom: 32px;
+            font-size: 0.875rem;
+        }
+        .contact-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+        .contact-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .contact-card p {
+            margin-bottom: 8px;
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .faq-item p {
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">&larr; Volver a Mimikai</a>
+
+        <h1>Soporte</h1>
+
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="faq-item">
+            <h3>¿Cómo empiezo una partida?</h3>
+            <p>Elige el modo de juego, agrega tus equipos (con nombre, color, rango de edad y número de jugadores), selecciona idioma, país y categorías, define las rondas y el tiempo, y comienza a jugar. Todos los equipos juegan por turnos en el mismo dispositivo.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>¿Cuál es la diferencia entre los dos modos?</h3>
+            <p>En <strong>Una a la vez</strong> recibes una pista por turno: juegas, corre el tiempo y confirmas si adivinaron. En <strong>Adivina sin parar</strong> el reloj no se detiene y las pistas aparecen una tras otra; marcas cada acierto o fallo hasta que se acabe el tiempo.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>¿Puedo cambiar una pista si no me gusta?</h3>
+            <p>Sí. Antes de iniciar el turno puedes tocar "Cambiar" para reemplazar la pista por otra de la misma categoría.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>¿De dónde salen las pistas?</h3>
+            <p>Las pistas se adaptan al rango de edad, país, idioma y categorías que elijas. Cuando no tenemos suficientes para tu configuración, generamos pistas nuevas automáticamente para que siempre haya variedad.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>¿Necesito conexión a internet?</h3>
+            <p>Sí. Mimikai obtiene y genera las pistas desde nuestro servidor, así que necesitas conexión a internet para crear y jugar una partida.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>¿Mis datos son privados?</h3>
+            <p>No necesitas cuenta ni datos personales para jugar. Solo procesamos la configuración de la partida para que el juego funcione. Consulta nuestra <a href="privacy.html">Política de Privacidad</a> para más detalles.</p>
+        </div>
+
+        <h2>¿Aún necesitas ayuda?</h2>
+
+        <div class="contact-card">
+            <h3>Escríbenos</h3>
+            <p>Envíanos un mensaje y te responderemos lo antes posible.</p>
+            <p><a href="mailto:jssilva93@gmail.com">jssilva93@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

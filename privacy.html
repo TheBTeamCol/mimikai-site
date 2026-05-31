@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad — Mimikai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --purple: #7c5cff;
+            --pink: #ff5fa2;
+            --bg: #f8f6ff;
+            --card: #ffffff;
+            --text: #241a3a;
+            --text-secondary: #6b6285;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #130f1f;
+                --card: #1f1830;
+                --text: #efeafc;
+                --text-secondary: #a89fc0;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .updated {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 8px;
+        }
+        p, ul {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        strong { color: var(--text); }
+        a {
+            color: var(--purple);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        .back {
+            display: inline-block;
+            margin-bottom: 32px;
+            font-size: 0.875rem;
+        }
+        .note {
+            background: var(--card);
+            border-left: 4px solid var(--pink);
+            border-radius: 8px;
+            padding: 16px 20px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">&larr; Volver a Mimikai</a>
+
+        <h1>Política de Privacidad</h1>
+        <p class="updated">Última actualización: 31 de mayo de 2026</p>
+
+        <h2>Resumen</h2>
+        <p>Mimikai es un juego de mímica por equipos. Para funcionar, la app se conecta a nuestro servidor, que prepara y administra tu partida y genera las pistas. Recopilamos únicamente lo mínimo necesario para que el juego funcione: <strong>no necesitas crear una cuenta ni darnos tu nombre, correo o teléfono</strong>.</p>
+
+        <h2>Información que procesamos</h2>
+        <p>Cuando creas y juegas una partida, la app envía a nuestro servidor la configuración del juego:</p>
+        <ul>
+            <li><strong>Nombres de equipos</strong> — las etiquetas que tú eliges (por ejemplo, "Equipo 1")</li>
+            <li><strong>Color y número de jugadores</strong> de cada equipo</li>
+            <li><strong>Rango de edad</strong> de cada equipo</li>
+            <li><strong>País e idioma</strong> seleccionados</li>
+            <li><strong>Categorías</strong> elegidas (películas, profesiones, etc.)</li>
+            <li><strong>Progreso y puntajes</strong> de la partida</li>
+        </ul>
+        <p>Estos datos se usan exclusivamente para construir tu partida, mostrar las pistas adecuadas, llevar la puntuación y permitir restaurar la partida en curso.</p>
+
+        <div class="note">
+            <p style="margin-bottom:0;">Los nombres de equipo son texto libre que tú escribes. Te recomendamos <strong>no usar nombres reales completos ni datos personales</strong> como nombre de equipo, ya que se guardan junto con la partida.</p>
+        </div>
+
+        <h2>Datos que NO recopilamos</h2>
+        <ul>
+            <li>Información personal (nombre, correo, teléfono)</li>
+            <li>Cuentas o inicio de sesión (la versión actual no los requiere)</li>
+            <li>Datos de ubicación</li>
+            <li>Contactos, fotos u otros datos del dispositivo</li>
+            <li>Identificadores de publicidad</li>
+        </ul>
+
+        <h2>Generación de pistas (IA)</h2>
+        <p>Cuando nuestra base de datos no tiene suficientes pistas para tu configuración, las generamos con un proveedor de modelos de lenguaje (<strong>OpenAI</strong> o <strong>Google Gemini</strong>). Esas solicitudes contienen únicamente parámetros del juego — categoría, rango de edad, país e idioma — y <strong>nunca datos personales ni los nombres de tus equipos</strong>.</p>
+        <p>Las pistas generadas se guardan en nuestra base de datos y se reutilizan en futuras partidas para mejorar el catálogo. Estas pistas no contienen información personal. Consulta las políticas de <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI</a> y de <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a> para más detalles sobre su tratamiento de datos.</p>
+
+        <h2>Almacenamiento y conservación</h2>
+        <p>Los datos de la partida se almacenan en nuestra base de datos para ejecutar y poder restaurar el juego. Las pistas generadas se conservan como parte del catálogo del juego. La información se transmite cifrada mediante HTTPS.</p>
+
+        <h2>Servicios de terceros</h2>
+        <p>Mimikai se apoya en los siguientes servicios externos:</p>
+        <ul>
+            <li><strong>Proveedores de IA</strong> — OpenAI y/o Google Gemini, únicamente para generar pistas.</li>
+            <li><strong>Infraestructura de servidor</strong> — donde se aloja el backend que administra las partidas.</li>
+        </ul>
+        <p>Mimikai no integra SDKs de publicidad ni de rastreo de terceros.</p>
+        <!--
+          PENDIENTE DE CONFIRMAR: ¿la app móvil incluye analítica o reporte de crashes
+          (Firebase Analytics, Crashlytics, etc.)? Si es así, declararlo aquí como tercero,
+          indicando qué datos recopila y enlazando a su política. Si no usa ninguno,
+          este bloque puede eliminarse. — redacción conservadora por ahora.
+        -->
+
+        <h2>Privacidad de los niños</h2>
+        <p>Mimikai está pensado para jugarse en grupo, incluso con niños, y filtra el contenido de las pistas según el rango de edad de cada equipo. No solicitamos ni recopilamos a sabiendas información personal de menores. Como el juego no requiere cuentas ni datos personales, no se recoge información que identifique a un niño.</p>
+
+        <h2>Cambios en esta política</h2>
+        <p>Si hacemos cambios en esta política de privacidad, actualizaremos la fecha en la parte superior de esta página. El uso continuado de la app tras los cambios constituye la aceptación de la política actualizada.</p>
+
+        <h2>Contacto</h2>
+        <p>Si tienes preguntas sobre esta política de privacidad, escríbenos a <a href="mailto:jssilva93@gmail.com">jssilva93@gmail.com</a>.</p>
+    </div>
+</body>
+</html>

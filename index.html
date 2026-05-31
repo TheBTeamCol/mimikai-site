@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimikai — Juego de mímica para fiestas</title>
+    <meta name="description" content="Mimikai es un juego de mímica por equipos: pistas adaptadas por edad, país y categoría, con dos modos de juego para animar cualquier reunión.">
+    <meta property="og:title" content="Mimikai — Juego de mímica para fiestas">
+    <meta property="og:description" content="Pistas por edad, país y categoría. Dos modos de juego. Diversión por equipos.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --purple: #7c5cff;
+            --pink: #ff5fa2;
+            --bg: #f8f6ff;
+            --card: #ffffff;
+            --text: #241a3a;
+            --text-secondary: #6b6285;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #130f1f;
+                --card: #1f1830;
+                --text: #efeafc;
+                --text-secondary: #a89fc0;
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 0 60px;
+        }
+
+        .hero-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            margin: 0 auto 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+            box-shadow: 0 12px 32px rgba(124, 92, 255, 0.35);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        /* Badges */
+        .badge-row {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .badge-row a img {
+            height: 44px;
+        }
+
+        /* Features */
+        .features {
+            padding: 40px 0 60px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 520px) {
+            .feature-grid { grid-template-columns: 1fr; }
+        }
+
+        .feature-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .feature-card .icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .feature-card p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        /* Modes */
+        .modes {
+            padding: 0 0 60px;
+        }
+
+        .modes h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .mode-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--purple);
+        }
+
+        .mode-card:nth-child(3) {
+            border-left-color: var(--pink);
+        }
+
+        .mode-card h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .mode-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(124, 92, 255, 0.25);
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+        }
+
+        footer a:hover {
+            color: var(--purple);
+        }
+
+        footer .copy {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-icon" aria-hidden="true">🎭</div>
+            <h1><span>Mimikai</span></h1>
+            <p>El juego de mímica por equipos. Pistas hechas a la medida de tu grupo: por edad, país y categoría — para animar cualquier reunión.</p>
+
+            <div class="badge-row">
+                <!-- Reemplaza # con los enlaces a las tiendas cuando la app esté publicada -->
+                <a href="#" aria-label="Disponible en App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Descargar en el App Store">
+                </a>
+                <a href="#" aria-label="Disponible en Google Play">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" alt="Disponible en Google Play">
+                </a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">🎬</div>
+                    <h3>Muchas categorías</h3>
+                    <p>Películas, profesiones, series, canciones, animales, personajes y más.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">👨‍👩‍👧</div>
+                    <h3>Por equipos y edades</h3>
+                    <p>Cada equipo elige su nombre, color y rango de edad. Las pistas se adaptan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🌎</div>
+                    <h3>Por país e idioma</h3>
+                    <p>Títulos y referencias localizadas según el país y el idioma que elijas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🤖</div>
+                    <h3>Pistas frescas</h3>
+                    <p>Cuando hace falta, generamos pistas nuevas para que nunca se repitan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="modes">
+            <h2>Dos modos de juego</h2>
+            <div class="mode-card">
+                <h3>Una a la vez</h3>
+                <p>Una pista por turno. El equipo juega, corre el tiempo y confirma si adivinaron. Clásico y por turnos.</p>
+            </div>
+            <div class="mode-card">
+                <h3>Adivina sin parar</h3>
+                <p>El reloj no se detiene: las pistas aparecen una tras otra y marcas cada acierto o fallo. Pura adrenalina.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <a href="privacy.html">Política de Privacidad</a>
+                <a href="support.html">Soporte</a>
+            </nav>
+            <p class="copy">&copy; 2026 The B Team. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
